@@ -19,7 +19,7 @@ const salt = bcrypt.genSaltSync(10);
 const secret = 'jdxwejkjdkewdded';
 
 const corsOptions = {
-    origin: 'https://blog-app-fe-topaz.vercel.app/', // Replace with your allowed origin(s)
+    origin: 'https://blog-app-fe-topaz.vercel.app', // Replace with your allowed origin(s)
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow cookies and credentials to be sent
 };
