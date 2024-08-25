@@ -9,7 +9,7 @@ const Header = () => {
   const username = userInfo?.username;
 
       useEffect(()=> {
-          fetch('http://localhost:4000/profile' , {
+          fetch('https://blog-app-api-gamma.vercel.app/profile' , {
             credentials: 'include',
           }).then(response=> {
              response.json().then(userInfo => {
@@ -18,7 +18,7 @@ const Header = () => {
           })
       },[]);
  function logout() {
-    fetch('http://localhost:4000/logout' , {
+    fetch('https://blog-app-api-gamma.vercel.app/logout' , {
            credentials :'include' ,
            method : 'POST' ,
     });

@@ -12,7 +12,7 @@ const PostPage = () => {
    useEffect(()=> {
 
     
-      fetch(`http://localhost:4000/api/post/${id}`)
+      fetch(`https://blog-app-api-gamma.vercel.app/api/post/${id}`)
       .then(response => {
          response.json().then(postInfo => {
             setPostInfo(postInfo);

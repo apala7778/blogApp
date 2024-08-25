@@ -14,7 +14,7 @@ const EditPost = () => {
     
 
      useEffect(()=> {
-           fetch('http://localhost:4000/api/post/'+id)
+           fetch('https://blog-app-api-gamma.vercel.app/api/post/'+id)
            .then(response=> {
              response.json().then(postInfo =>{
                 setTitle(postInfo.title);
@@ -38,7 +38,7 @@ const EditPost = () => {
             data.set('file' , files?.[0]);
           }
           
-           await  fetch('http://localhost:4000/api/post', {
+           await  fetch('https://blog-app-api-gamma.vercel.app/api/post', {
              method: 'PUT' ,
              body: data ,
              credentials: 'include' ,
