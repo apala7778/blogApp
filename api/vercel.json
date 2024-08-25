@@ -1,16 +1,19 @@
 {
-    "version": 2,
-    "builds": [
+    "version" : 2 ,
+    "builds" : [
       {
-        "src": "api/index.js",
-        "use": "@vercel/node"
+        "src" : "*.js" ,
+        "use" : "@vercel/node"
       }
-    ],
-    "routes": [
+    ], 
+    "routes" : [
       {
-        "src": "/(.*)",
-        "dest": "/api/index.js"
+        "src" : "/(.*)" ,
+        "dest" : "/"  ,
+           "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+       "headers": {
+        "Access-Control-Allow-Origin": "https://blog-app-fe-topaz.vercel.app"
+      }
       }
     ]
-  }
-  
+} 
