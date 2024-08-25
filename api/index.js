@@ -20,7 +20,7 @@ const secret = 'jdxwejkjdkewdded';
 
 const corsOptions = {
     origin: 'https://blog-app-fe-topaz.vercel.app', // Replace with your allowed origin(s)
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    methods: ["GET","PUT","PATCH","POST","DELETE"],
     credentials: true, // Allow cookies and credentials to be sent
 };
 
